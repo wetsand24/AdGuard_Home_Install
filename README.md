@@ -2,6 +2,8 @@
 
 Every command from my AdGuard Home 1.0 video, in video order. Tested in November 2026 with AdGuard Home v1.0.0 on Ubuntu Server 24.04.
 
+▶️ Video: https://youtu.be/ylZ4mvNyj1w
+
 AdGuard Home is a DNS blocker for the whole home network. It blocks ads and trackers for every device that uses it as its DNS server, and its **Blocked services** page blocks a whole app (TikTok, Netflix, ChatGPT and 139 more) with one switch, for the whole house or for one device.
 
 It does **not** remove YouTube ads. YouTube serves its ads from the same names as its videos, and a DNS blocker can only refuse a whole name. AdGuard's own FAQ says the same.
