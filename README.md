@@ -183,16 +183,17 @@ AdGuard Home starts with one list switched on, the AdGuard DNS filter. You can a
 
 **Filters > Blocklists > Add blocklists**, then one of:
 
-- **Add from list**: tick well-known public lists from the built-in catalogue.
-- **Add manually**: type a name and paste the URL of the list.
+- **Add from list**: tick well-known public lists from the built-in catalogue. HaGeZi's lists are in it (Normal, Pro, Pro++, Ultimate and more), so there is no URL to paste for those.
+- **Add manually**: type a name and paste the URL of any other list.
 
-I tested this on v1.0.0 with the list a Pi-hole install starts with:
+I tested this on v1.0.0 with two lists added by URL:
 
 ```
 https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt
 ```
 
-It loaded 76,118 rules, and names from that list were blocked right away. **Check for updates** on the same page refreshes every list. Lists of names that must never be blocked go under **Filters > Allowlists**.
+The first is the list a Pi-hole install starts with; it loaded 76,118 rules. The second is HaGeZi's Pro list; it loaded 234,114 rules. With each one, names from the list were blocked right away. **Check for updates** on the same page refreshes every list. Lists of names that must never be blocked go under **Filters > Allowlists**.
 
 The more lists you add, the more often a site you want gets blocked. Step 6 shows how to unblock a name.
 
