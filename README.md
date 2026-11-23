@@ -177,6 +177,25 @@ sudo /opt/AdGuardHome/AdGuardHome -s status
 sudo /opt/AdGuardHome/AdGuardHome -s restart
 ```
 
+## Use your own blocklists (not in the video)
+
+AdGuard Home starts with one list switched on, the AdGuard DNS filter. You can add more, including the lists you used on Pi-hole.
+
+**Filters > Blocklists > Add blocklists**, then one of:
+
+- **Add from list**: tick well-known public lists from the built-in catalogue.
+- **Add manually**: type a name and paste the URL of the list.
+
+I tested this on v1.0.0 with the list a Pi-hole install starts with:
+
+```
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+```
+
+It loaded 76,118 rules, and names from that list were blocked right away. **Check for updates** on the same page refreshes every list. Lists of names that must never be blocked go under **Filters > Allowlists**.
+
+The more lists you add, the more often a site you want gets blocked. Step 6 shows how to unblock a name.
+
 ## Troubleshooting
 
 - **"This port is already in use" in the wizard.** Run the port 53 lines from Step 1, then reload the wizard page.
